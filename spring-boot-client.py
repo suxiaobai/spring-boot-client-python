@@ -12,8 +12,8 @@ from utils import EnableAutoConfiguration
 
 app = Flask(__name__)
 EnableAutoConfiguration(app, name="Kefu", \
-    profile="WebhookCallback-47.3", label="master", \
-    config_server="http://kefu-app1:18888")
+    profile="Webapp-47.3", label="master", \
+    config_server="http://127.0.0.1:18888")
 
 @app.route("/")
 def hello_world():
