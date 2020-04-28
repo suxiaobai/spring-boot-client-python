@@ -8,7 +8,7 @@
 
 from os import getenv
 from flask import Flask
-from springboot import EnableAutoConfiguration
+from utils import EnableAutoConfiguration
 
 app = Flask(__name__)
 EnableAutoConfiguration(app, name="Kefu", \
