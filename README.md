@@ -26,12 +26,12 @@ EnableAutoConfiguration 接收 4个参数
 |参数序号 | 参数名称 | 备注 | 
 | ------ | ------ | ---- |
 | 1 | app | flask app |
-| 2 | name | 对应 spring clond 中的 SPRING_CLOUD_CONFIG_NAME | 
-| 3 | profile | 对应 spring clond 中的 SPRING_CLOUD_CONFIG_PROFILE | 
-| 4 | label | 对应 spring clond 中的 SPRING_CLOUD_CONFIG_LABEL | 
-| 5 | config_server | 对应 spring clond 中的 SPRING_CLOUD_CONFIG_URI | 
+| 2 | name | 对应 springboot 中的 SPRING_CLOUD_CONFIG_NAME | 
+| 3 | profile | 对应 springboot 中的 SPRING_CLOUD_CONFIG_PROFILE | 
+| 4 | label | 对应 springboot 中的 SPRING_CLOUD_CONFIG_LABEL | 
+| 5 | config_server | 对应 springboot 中的 SPRING_CLOUD_CONFIG_URI | 
 
 从 Spring Cloud ConfigServer 获取配置的完整 URL 路径为:
 ```
-SPRING_CLOUD_CONFIG_URI/SPRING_CLOUD_CONFIG_NAME/SPRING_CLOUD_CONFIG_PROFILE/SPRING_CLOUD_CONFIG_LABEL
+curl SPRING_CLOUD_CONFIG_URI/SPRING_CLOUD_CONFIG_NAME/SPRING_CLOUD_CONFIG_PROFILE/SPRING_CLOUD_CONFIG_LABEL
 ```
